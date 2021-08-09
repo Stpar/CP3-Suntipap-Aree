@@ -10,14 +10,15 @@ print("  Iced Cappuccino"," 80","    100","   130")
 print("- Hot Mocha","       80","    100","   140")
 print("  Iced Mocha","      90","    110","   150")
 print("-------------------------------------")
-print("*This price does not include 5% service charge")
+print("*This price does not include 10% service charge")
 print("-------------------------------------")
 
 usernameinput = input("Username : ")
 passwordinput = input("Password : ")
 while usernameinput != "s" or passwordinput != "1":
     print("Wrong Username or Password")
-    break
+    usernameinput = input("Username : ")
+    passwordinput = input("Password : ")
 else:
     import time
     print("---------------")
